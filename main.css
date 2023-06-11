@@ -1,0 +1,13 @@
+@import url("/pl/layout/27928/2/left-menu.css");
+
+:root {
+    --left-menu-gradient: linear-gradient(180deg, #F47F0D 0%, #F960D6 80.75%);
+
+    --btn-color-1: #FF8105;
+    --btn-color-2: #F77459;
+    --btn-color-3: #F0535C;
+
+    --color-white: #FFFFFF;
+    --color-grey: #e5e5e5;
+
+}

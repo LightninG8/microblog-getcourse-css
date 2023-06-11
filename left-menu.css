@@ -1,0 +1,135 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.menu-item-label {
+  display: none !important;
+}
+
+/* Меню */
+.gc-account-leftbar {
+  background: var(--left-menu-gradient);
+  width: 100px;
+}
+
+.gc-account-leftbar .gc-account-user-menu {
+  max-height: 100vh;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.gc-account-user-menu::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Элемент меню */
+.gc-account-leftbar .gc-account-user-menu li {
+  margin-top: 10px;
+  background: none;
+  border-radius: 6px;
+
+  overflow: hidden;
+}
+
+.gc-account-leftbar .gc-account-user-menu li:first-child {
+  margin-top: 0;
+}
+
+/* Ссылка в меню */
+.gc-account-leftbar
+  .gc-account-user-menu
+  li.menu-item-notifications_button_small
+  a,
+.gc-account-leftbar .gc-account-user-menu li a {
+  width: 84px;
+  height: 84px;
+  background: white;
+}
+
+.gc-account-leftbar
+  .gc-account-user-menu
+  li.menu-item-notifications_button_small
+  a:hover,
+.gc-account-leftbar .gc-account-user-menu li a:hover {
+  background: var(--color-grey, #e5e5e5);
+}
+
+/* Профиль */
+.menu-item-profile .menu-item-icon {
+  content: url("https://fs.getcourse.ru/fileservice/file/download/a/659750/sc/191/h/a4c1146757b8f90093eaa81bd9fb7b30.svg");
+}
+
+/* Уведомления */
+.menu-item-notifications_button_small .menu-item-icon {
+  content: url("https://fs.getcourse.ru/fileservice/file/download/a/659750/sc/343/h/a93538bebef7076dea8fa0a8ce5b1268.svg");
+}
+
+/* Сайт */
+.menu-item-cms .menu-item-icon {
+  content: url("https://fs.getcourse.ru/fileservice/file/download/a/659750/sc/14/h/216a39275d049e424be08b79f4d82089.svg");
+}
+
+/* Тренинги */
+.menu-item-teach .menu-item-icon {
+  content: url("https://fs.getcourse.ru/fileservice/file/download/a/659750/sc/199/h/0ec26a9b134ac2285b5f7d691a487e7f.svg");
+}
+
+/* Ученики */
+.menu-item-user .menu-item-icon {
+  content: url("https://fs.getcourse.ru/fileservice/file/download/a/659750/sc/274/h/0a4dea8870c9ba73bcb0b071cdd06359.svg");
+}
+
+/* Задачи */
+.menu-item-tasks .menu-item-icon {
+  content: url("https://fs.getcourse.ru/fileservice/file/download/a/659750/sc/234/h/c134b9fad6a3b36c30d605c843c8e1f6.svg");
+}
+
+/* Общение */
+.menu-item-notifications .menu-item-icon {
+  content: url("https://fs.getcourse.ru/fileservice/file/download/a/659750/sc/335/h/4338f46e807ced2dbbcbdc730d7de540.svg");
+}
+
+/* Продажи */
+.menu-item-sales .menu-item-icon {
+  content: url("https://fs.getcourse.ru/fileservice/file/download/a/659750/sc/289/h/972c0f07a6ae11cee0e9e7b992da44d2.svg");
+}
+
+/* Чатиум */
+.menu-item-chatium .menu-item-icon {
+  content: url("https://fs.getcourse.ru/fileservice/file/download/a/659750/sc/366/h/4da154abd9029cb9d8eb6c4aca06cb20.svg");
+}
+
+/* Субменю */
+.gc-account-leftbar .gc-account-user-submenu-bar {
+  left: 100px;
+}
+
+/* Фиск отступа у контента */
+.gc-main-content.with-left-menu {
+  margin-left: 100px;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+  .gc-account-leftbar.expanded {
+    height: 100%;
+    background: var(--left-menu-gradient);
+  }
+
+  .gc-account-leftbar .gc-account-user-menu {
+    background: none;
+    width: 100px;
+    height: auto;
+  }
+}
+

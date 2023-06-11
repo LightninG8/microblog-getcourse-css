@@ -1,0 +1,105 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* Баннер */
+.training-banner-mob {
+  display: none;
+}
+
+.training-banner,
+.training-banner-mob {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .training-banner {
+    display: none;
+  }
+
+  .training-banner-mob {
+    display: block !important;
+  }
+}
+
+/* Тренинги */
+.training-container {
+  margin-top: 24px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 24px 1fr;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .training-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 24px;
+  }
+}
+
+/* Контейнер тренингов */
+.col-md-12 .stream-table {
+  margin-left: 0;
+}
+
+.stream-table tbody {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 15px 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 24px;
+  grid-column-gap: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .stream-table tbody {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Карточка тренинга */
+.stream-table tbody tr td {
+  padding: 0;
+}
+
+.stream-table tr.no-lessons.no-children td {
+  opacity: 1;
+}
+
+/* Кнопки */
+.training-buttons {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 24px;
+}
+
+.training-button {
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.training-button:hover {
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.training-button-icon {
+  max-width: 100%;
+}
